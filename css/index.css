@@ -1,0 +1,79 @@
+
+header{
+  display:flex;
+  flex-direction:row;
+  height: 50px;
+  background-color:#fff;
+  box-shadow: 0 1px 10px 1px #777;
+  padding: 3px;
+}
+.logo{
+  height:40px;
+  width: auto;
+}
+.profil-login{
+  margin: auto;
+  margin-right: 2px;
+  margin-top: 4px;
+
+}
+.nav-bar{
+  display: flex;
+  flex-direction:row;
+}
+.nav-bar ul{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  padding: 5px;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-left:10px;
+  padding-right: 10px;
+  font-family:Arial;
+  font-weight: bold;
+  color: #555;
+  border-right: 1px solid #ccc ;
+  cursor: pointer;
+}
+.nav-list:last-child{
+  border: none;
+}
+.nav-list:hover{
+  color: #2a5ca7;
+}
+/*----------------------cover-------------------*/
+.cover{
+  height:30vh;
+  overflow: hidden;
+  background-image:url("/sys_img/cover.jpg");
+  background-size: cover;
+}
+/*-----------------------mobile----------------*/
+.menu-mobile{
+  float: right;
+  margin: auto;
+  margin-right: 5px;
+  display: none;
+}
+@media screen and (max-width:780px) {
+  .nav-bar{
+    display:none;
+    position: absolute;
+    top:0px;
+    right:0px;
+    flex-direction:column;
+    border:none;
+    background-color: #eee;
+    height: 100%;
+    color: #17a268;
+  }
+  .menu-mobile{
+    display: block;
+  }
+}
